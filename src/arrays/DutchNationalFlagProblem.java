@@ -61,6 +61,13 @@ class DutchNationalFlagProblem {
                 System.out.println(i);
             }
         }
+        {
+            int[] arr = new int[] { 2,0 };
+            sortArray(arr);
+            for (int i : arr) {
+                System.out.println(i);
+            }
+        }
     }
 
 }
