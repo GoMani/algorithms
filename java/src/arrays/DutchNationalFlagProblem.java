@@ -1,3 +1,4 @@
+package arrays;
 /**
  * http://users.monash.edu/~lloyd/tildeAlgDS/Sort/Flag/
  * Sort an array of 0s, 1s and 2s

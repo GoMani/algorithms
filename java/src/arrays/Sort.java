@@ -1,14 +1,15 @@
 package arrays;
 
 class Sort {
-/**
- * insertion Sort
- * complexity O(nSquare)
- * @param array
- * @param asc
- */
+    /**
+     * insertion Sort complexity O(nSquare)
+     * 
+     * @param array
+     * @param asc
+     */
     public void insertionSort(int[] array, boolean asc) {
-
+        if (array == null || array.length < 2)
+            return;
         for (int j = 1; j < array.length; j++) {
             int current = array[j];
             int i = j - 1;
