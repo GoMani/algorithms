@@ -25,15 +25,18 @@ It takes 1 step to move from (0, 0) to (1, 1). It takes one more step to move fr
 
 This question is intentionally left slightly vague. Clarify the question by trying out a few cases in the “See Expected Output” section. */
 public class MinimumDistanceInGrid {
-    public int coverPoints(int[] A, int[] B) {
-        if(A ==null ||  A.length <2) return 0;
-   int sum=0;
-  int x=A[0]; int y=B[0];
-   for(int i=1;i<A.length;i++){
-    sum+=  Math.max(Math.abs(x-A[i]), Math.abs(y-B[i]));
-    x=A[i]; y=B[i];
-   }
+ public int coverPoints(int[] A, int[] B) {
+		if (A == null || A.length < 2)
+			return 0;
+		int sum = 0;
+		int x = A[0];
+		int y = B[0];
+		for (int i = 1; i < A.length; i++) {
+			sum += Math.max(Math.abs(x - A[i]), Math.abs(y - B[i]));
+			x = A[i];
+			y = B[i];
+		}
 
-  return sum;
-    }
+		return sum;
+	}
 }
